@@ -34,12 +34,12 @@
                     echo "<p>Hubo un error al enviar tu " . $tipo . ".</p>";
                 }
 
-                $conexion = mysqli_connect("localhost","root","", "contactos") or die('No se pudo conectar al servidor');
-                $consulta = mysqli_query($conexion, "INSERT INTO `contactos` (`id`,`nombre`,`email`,`comentario`) VALUES ( '', '$nombre','$email','$mensaje')") or die(mysqli_error($conexion));
+                include('conexion.php');
+                $consulta = mysqli_query($conexion, "INSERT INTO `contactos` (`id`,`nombre`,`email`,`asunto`,`mensaje`,`tipo`) VALUES ( '', '$nombre','$email','$asunto','$mensaje','$tipo')") or die(mysqli_error($conexion));
 
                 ?>
 
-                <a href="index.html">Volver al inicio</a>
+                <a href="index.php">Volver al inicio</a>
             </div>
         </div>
     </body>
