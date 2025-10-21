@@ -794,3 +794,18 @@ form label {
 .nexto_top_right button[type="submit"] i {
   font-size: 14px;
 }
+
+.res_buscar {
+  text-align: justify;
+}
+
+.img_header_buscar {
+  width:100%;
+  height:20vh;
+}
+
+.img_header_buscar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
