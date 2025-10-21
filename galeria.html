@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Galería expresionista</title>
+    </head>
+
+
+
+    <body>
+        <header>
+            <div class="top_navbar_2" id="header">
+                <a href="index.php" class="active">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="artistas.html">Artistas</a>
+                <a href="trasfondo.html">Trasfondo</a>
+                <a href="grupos.html">Grupos</a>
+                <a href="#">Tienda</a>
+                <a href="#"><i class="fa fa-user-circle"></i></a>
+            </div>
+        </header>
+        <div class="fondo2" id="main">
+            <div class="contenedor">
+                <h1>Galería</h1>
+
+
+                <div class="gallery-controls">
+                    <button id="filter-btn"><i class="fa fa-filter"></i></button>
+                </div>
+                  
+                <div class="gallery">
+
+                    <div class="gallery-item" 
+                        data-title="Dangast Village Landscape" 
+                        data-year="1909"
+                        data-artist="Heckel"
+                        data-desc="Paisaje expresionista en Dangast.">
+                    <img src="img/heckel_dangast-village-landscape_1909.jpg" 
+                        data-large="img/heckel_dangast-village-landscape_1909_exp.jpg" 
+                        alt="Dangast Village Landscape, 1909">
+                    </div>
+
+                    <div class="gallery-item"
+                        data-title="Hombres en la mesa"
+                        data-year="1913"
+                        data-artist="Heckel"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/heckel_hombres-mesa_1913.jpeg"
+                        data-large="img/heckel_hombres-mesa_1913_exp.jpeg"
+                        alt="Heckel Hombres en la mesa, 1913">
+                    </div>
+
+                    <div class="gallery-item"
+                        data-title="Casas en Murnau"
+                        data-year="1909"
+                        data-artist="Kandinsky"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/kandinsky_casas-murnau_1909.jpg"
+                        data-large="img/kandinsky_casas-murnau_1909_exp.jpg"
+                        alt="Casas en Murnau, 1909">
+                    </div>
+
+                    <div class="gallery-item"
+                        data-title="Paisaje con dos álamos"
+                        data-year="1912"
+                        data-artist="Kandinsky"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/kandinsky_paisaje-alamos_1912.jpg"
+                        data-large="img/kandinsky_paisaje-alamos_1912.jpg"
+                        alt="Paisaje alamos, 1912">
+                    </div>
+                    <div class="gallery-item"
+                        data-title="Marcella"
+                        data-year="19010"
+                        data-artist="Kirchner"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/kirchner_artisin-marcella_1910.jpg"
+                        data-large="img/kirchner_artisin-marcella_1910_exp.jpg"
+                        alt="Marcella, 1910">
+                    </div>
+                    <div class="gallery-item"
+                        data-title="Cuatro bañistas"
+                        data-year="1910"
+                        data-artist="Kirchner"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/kirchner_cuatro-bañistas_1910.jpg"
+                        data-large="img/kirchner_cuatro-bañistas_1910_exp.jpg"
+                        alt="Cuatro bañistas, 1910">
+                    </div>
+                    <div class="gallery-item"
+                        data-title="Mujer bajo parasol japonés"
+                        data-year="1909"
+                        data-artist="Kichner"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/kirchner_mujer-parasol_1909.jpg"
+                        data-large="img/kirchner_mujer-parasol_1909_exp.jpg"
+                        alt="Parasol japonés, 1909">
+                    </div>
+                    
+                    <div class="gallery-item"
+                        data-title="La vaca amarilla"
+                        data-year="1912"
+                        data-artist="Franz Marc"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/marc_vaca-amarilla_1912.jpg"
+                        data-large="img/marc_vaca-amarilla_1912_exp.jpg"
+                        alt="La vaca amarilla, 1912">
+                    </div>
+                    <div class="gallery-item"
+                        data-title="Afueras de Murnau"
+                        data-year="1908"
+                        data-artist="Gabriele Münter"
+                        data-desc="Composición expresionista con figuras en mesa.">
+                        <img src="img/munter_afueras-murnau_1908.jpg"
+                        data-large="img/munter_afueras-murnau_1908_exp.jpg"
+                        alt="Afueras Murnau, 1908">
+                    </div>
+                </div>
+                <div id="lightbox" class="lightbox">
+                    <span class="close">&times;</span>
+                    <div class="setentatreinta">
+                        <div class="setenta">
+                            <img class="lightbox-img" src="" alt="">
+                        </div>
+                        <div class="treinta">
+                            <div class="lightbox-info">
+                                <h2 id="lightbox-title"></h2>
+                                <p id="lightbox-artist"></p>
+                                <p id="lightbox-year"></p>
+                                <p id="lightbox-desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                   <!-- Panel lateral -->
+                   <div id="filter-panel" class="filter-panel">
+                    <span id="close-panel" class="close-panel">&times;</span>
+                    <h3>Filtrar por:</h3>
+                            
+                    <label>
+                        Autor:
+                        <select id="artist-filter">
+                            <option value="all">Todos</option>
+                            <option value="Heckel">Heckel</option>
+                            <option value="Kandinsky">Kandinsky</option>
+                            <option value="Kirchner">Kirchner</option>
+                            <option value="Marc">Marc</option>
+                            <option value="Munter">Munter</option>
+                        </select>
+                    </label>
+                                
+                    <label>
+                        Año:
+                        <select id="year-filter">
+                            <option value="all">Todos</option>
+                            <option value="1908">1908</option>
+                            <option value="1909">1909</option>
+                            <option value="1910">1910</option>
+                            <option value="1912">1912</option>
+                            <option value="1913">1913</option>
+                        </select>
+                    </label>
+                    <button id="apply-filters">Aplicar filtros</button>
+                </div>
+      <script src="script.js"></script>
+  </body>
