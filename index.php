@@ -238,7 +238,7 @@
                         </form>
                     </div>
                     <div class="left_gen">
-                    <img src="img/help.jpg">
+                    <img src="img/icon_munter_outskirts_of_munrau_house.png">
                     </div>
                 </div>
             </div>
